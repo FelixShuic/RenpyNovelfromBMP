@@ -129,6 +129,7 @@ label prologue:
     return
     
 label prologue2:
+        window show
         play music basic
         scene bg_ekb
         "Весеннее солнышко пробивалось сквозь пелену сознания"
@@ -158,7 +159,15 @@ label prologue2:
         return
     
 label cass1:
-    
+    scene cassete11
+    with fade
+    " "
+    scene cassete12
+    with fade
+    " "
+    scene cassete13
+    with fade
+    " "
     jump prologue2
     return
     
@@ -479,10 +488,16 @@ label caffe:
 return
 
 label cass2:
-jump day22
+    play music maxpayne
+    scene cassete2
+    ""
+    stop music
+    play music basic
+    jump day22
 return
 
 label day22:
+    
     scene bg_kor
     with fade
     l "Что же, сегодня у меня день электроники"
@@ -1010,6 +1025,12 @@ label adamend1:
 return
 
 label adamcass:
+    stop music
+    play music maxpayne
+    scene cassete4
+    ""
+    stop music
+    play music basic
     jump adamend2
 return
 
@@ -1144,6 +1165,11 @@ label judiend1:
 return
 
 label judithcass:
+    stop music
+    play music maxpayne
+    scene cassete3
+    " "
+    stop music
     jump judithend2
 return
 
